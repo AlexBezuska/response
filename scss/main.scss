@@ -5,16 +5,72 @@
 
 @import"typography";
 
-$bg: #5d7e77;
-$dark: #1c1b1c;
+$bg: #53514c;
+$dark: #2f2e2f;
+
+a{
+	color: white;
+}
 
 body{
 	background: $bg;
 }
 
 .slideFrame{
+	padding: 75px 0 95px 0;
 	width: 16000px
 }
+
+header{
+	height: 65px;
+	width: 100%;
+background: darken($bg, 3%);
+	position: fixed;
+	z-index: 2;
+	form{
+		width: intrinsic;
+		margin: 0 auto;
+	}
+	input{
+		border: 0px;
+		height: 32px;
+		font-size: 18px;
+		padding: 4px;
+		margin: 15px 15px;
+		width: 450px;
+		vertical-align: middle;
+	}
+	button{
+		color: white;
+		vertical-align: middle;
+		margin: 0 0 0 0;
+		background: lighten($bg, 2%);
+		display: inline-block;
+		padding: 6px 12px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 1.428571429;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		cursor: pointer;
+		border: 1px solid transparent;
+		border-radius: 6px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		outline: none;
+		&:hover{
+			background: lighten($bg, 5%);
+		}
+		&:active{
+			background: darken($bg, 5%);
+		}
+	}
+}
+
 .label{
 	display: block;
 	width: 100%;
@@ -47,7 +103,7 @@ iframe{
 	$newHeight: $height / $dpr;
 	width: $newWidth * 1.1;
 	height: $newHeight * 1.1;
-	border-radius: $newHeight * .05;
+	border-radius: $newHeight * .03;
 	iframe{
 		position: relative; 
 		width:$newWidth; 	left: $newWidth * .05;
@@ -70,4 +126,16 @@ iframe{
 .res1366by768{ @include device( 1366px, 768px, 1); }
 
 
-
+footer{
+	color: white;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+background: darken($bg, 3%);
+	position: fixed;
+	z-index: 2;
+	p{
+		width: intrinsic;
+		margin: 15px auto;
+	}
+}

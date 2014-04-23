@@ -266,11 +266,59 @@ html {
 .center-inside {
   text-align: center; }
 
+a {
+  color: white; }
+
 body {
-  background: #5d7e77; }
+  background: #53514c; }
 
 .slideFrame {
+  padding: 75px 0 95px 0;
   width: 16000px; }
+
+header {
+  height: 65px;
+  width: 100%;
+  background: #4b4945;
+  position: fixed;
+  z-index: 2; }
+  header form {
+    width: intrinsic;
+    margin: 0 auto; }
+  header input {
+    border: 0px;
+    height: 32px;
+    font-size: 18px;
+    padding: 4px;
+    margin: 15px 15px;
+    width: 450px;
+    vertical-align: middle; }
+  header button {
+    color: white;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    background: #585651;
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    outline: none; }
+    header button:hover {
+      background: #605e58; }
+    header button:active {
+      background: #464440; }
 
 .label {
   display: block;
@@ -284,20 +332,20 @@ body {
   position: relative;
   display: inline-block;
   margin: 0 20px;
-  background: #1c1b1c;
+  background: #2f2e2f;
   vertical-align: bottom; }
 
 iframe {
   background: white;
   margin: 0 auto;
-  border: 1px solid #292829;
+  border: 1px solid #3c3b3c;
   overflow-x: hidden;
   overflow-y: scroll; }
 
 .iphone {
   width: 352px;
   height: 528px;
-  border-radius: 24px; }
+  border-radius: 14.4px; }
   .iphone iframe {
     position: relative;
     width: 320px;
@@ -310,7 +358,7 @@ iframe {
 .iphone4s {
   width: 352px;
   height: 528px;
-  border-radius: 24px; }
+  border-radius: 14.4px; }
   .iphone4s iframe {
     position: relative;
     width: 320px;
@@ -323,7 +371,7 @@ iframe {
 .iphone5s {
   width: 352px;
   height: 624.8px;
-  border-radius: 28.4px; }
+  border-radius: 17.04px; }
   .iphone5s iframe {
     position: relative;
     width: 320px;
@@ -336,7 +384,7 @@ iframe {
 .nexus4 {
   width: 422.4px;
   height: 704px;
-  border-radius: 32px; }
+  border-radius: 19.2px; }
   .nexus4 iframe {
     position: relative;
     width: 384px;
@@ -349,7 +397,7 @@ iframe {
 .nexus5 {
   width: 396.0px;
   height: 704px;
-  border-radius: 32px; }
+  border-radius: 19.2px; }
   .nexus5 iframe {
     position: relative;
     width: 360px;
@@ -362,7 +410,7 @@ iframe {
 .galaxys3 {
   width: 396.0px;
   height: 704px;
-  border-radius: 32px; }
+  border-radius: 19.2px; }
   .galaxys3 iframe {
     position: relative;
     width: 360px;
@@ -375,7 +423,7 @@ iframe {
 .ipadMini {
   width: 844.8px;
   height: 1126.4px;
-  border-radius: 51.2px; }
+  border-radius: 30.72px; }
   .ipadMini iframe {
     position: relative;
     width: 768px;
@@ -388,7 +436,7 @@ iframe {
 .ipadRetina {
   width: 844.8px;
   height: 1126.4px;
-  border-radius: 51.2px; }
+  border-radius: 30.72px; }
   .ipadRetina iframe {
     position: relative;
     width: 768px;
@@ -401,7 +449,7 @@ iframe {
 .res1366by768 {
   width: 1502.6px;
   height: 844.8px;
-  border-radius: 38.4px; }
+  border-radius: 23.04px; }
   .res1366by768 iframe {
     position: relative;
     width: 1366px;
@@ -410,3 +458,15 @@ iframe {
     top: 38.4px; }
   .res1366by768 .label {
     bottom: -76.8px; }
+
+footer {
+  color: white;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: #4b4945;
+  position: fixed;
+  z-index: 2; }
+  footer p {
+    width: intrinsic;
+    margin: 15px auto; }
