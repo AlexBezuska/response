@@ -20,3 +20,9 @@ $('.go').click(function() {
      window.location.hash = url;
      loadURL(url);
 });
+
+
+
+$(".urlToTest").focus(function(){
+    $('.triangle-isosceles').fadeOut();
+});
