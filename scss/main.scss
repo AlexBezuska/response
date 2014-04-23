@@ -1,0 +1,73 @@
+
+@import"structure";
+
+@import"colors";
+
+@import"typography";
+
+$bg: #5d7e77;
+$dark: #1c1b1c;
+
+body{
+	background: $bg;
+}
+
+.slideFrame{
+	width: 16000px
+}
+.label{
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	color: white;
+	margin: 0 auto;
+}
+
+.device{
+	position: relative;
+	display: inline-block;
+	margin: 0 20px;
+	background: $dark;
+	vertical-align: bottom;
+
+}
+
+iframe{
+	background: white;
+	margin: 0 auto; 
+	border: 1px solid lighten($dark, 5%);
+	overflow-x: hidden; 
+	overflow-y: scroll;
+}
+
+
+@mixin device ( $width, $height, $dpr ) { 
+	$newWidth: $width / $dpr;
+	$newHeight: $height / $dpr;
+	width: $newWidth * 1.1;
+	height: $newHeight * 1.1;
+	border-radius: $newHeight * .05;
+	iframe{
+		position: relative; 
+		width:$newWidth; 	left: $newWidth * .05;
+		height:$newHeight; top: $newHeight * .05;
+	}
+	.label{
+		bottom: -$newHeight * .1;
+	}
+}
+
+
+.iphone{ @include device( 320px, 480px, 1 ); }
+.iphone4s{ @include device( 640px, 960px, 2 ); }
+.iphone5s{ @include device( 640px, 1136px, 2 ); }
+.nexus4{ @include device( 768px, 1280px, 2 ); }
+.nexus5{ @include device( 1080px, 1920px, 3); }
+.galaxys3{ @include device( 720px, 1280px, 2); }
+.ipadMini{ @include device( 768px, 1024px, 1 ); }
+.ipadRetina{ @include device( 1536px, 2048px, 2 ); }
+.res1366by768{ @include device( 1366px, 768px, 1); }
+
+
+
