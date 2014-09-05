@@ -29,5 +29,6 @@ splits lets you see your website or webapp in multiple iframes sized approproatl
 
 *  eleminate need to prefix URLs with 'http://'
 *  Library of devices and allow users to select groups of devices.
-*  add feature to rotate devices
-*  add ability to select independant urls per device
+*  device rotation
+*  zoom slider
+*  independant urls per device
