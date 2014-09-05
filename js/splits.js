@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 function loadURL(URL) {
-    $('iframe').attr("src", "http://" + URL);
+    $('iframe').attr("src", URL);
 }
 
 $(document).keypress(function(e) {
