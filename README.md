@@ -28,7 +28,7 @@ splits lets you see your website or webapp in multiple iframes sized approproatl
 
 ###splits roadmap
 
-*  eleminate need to prefix URLs with 'http://'
+*  ~~eleminate need to prefix URLs with 'http://'~~
 *  Library of devices and allow users to select groups of devices.
 *  device rotation
 *  zoom slider
