@@ -1,4 +1,4 @@
-![alt tag](./img/logo.png)
+![alt tag](./img/logo-darkbg.png)
 ========
 
 Responsive Web Design layout testing system. 
