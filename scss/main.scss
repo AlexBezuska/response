@@ -27,10 +27,13 @@ header{
 	background: darken($bg, 3%);
 	position: fixed;
 	z-index: 2;
+
 	.logo{
+		height: 50px;
 		float: left;
 		margin: 10px 15px;
 	}
+
 	form{
 		float: right;
 		width: intrinsic;

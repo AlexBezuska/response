@@ -283,6 +283,7 @@ header {
   position: fixed;
   z-index: 2; }
   header .logo {
+    height: 50px;
     float: left;
     margin: 10px 15px; }
   header form {
