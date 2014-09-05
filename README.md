@@ -3,7 +3,7 @@
 
 Responsive Web Design layout testing system. 
 
-##Try out splits now [HERE](https://rawgit.com/AlexBezuska/splits/master/index.html)
+##Try out splits now [HERE](http://splits.alexbezuska.com/)
 
 
 ###splits really works best right now on large screens, while it is a tool to test responsive sites splits itself is not responsive per se.
